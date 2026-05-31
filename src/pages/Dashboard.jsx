@@ -295,6 +295,7 @@ function Dashboard() {
     setSeleccionados([])
 
     obtenerIncidentes()
+    obtenerGrupos()
 
   }
 

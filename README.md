@@ -49,6 +49,21 @@ Aplicación web desarrollada con React que permite a los usuarios de la Universi
 https://indencents-cec.vercel.app/
 
 
+## Credenciales de prueba
+
+Para facilitar la evaluación y prueba del sistema, se encuentran disponibles las siguientes cuentas de ejemplo:
+
+### Administrador
+
+**Correo:** :  jaac812@gmail.com
+**Contraseña:**  araque81
+
+### Usuario de prueba 1
+
+**Correo:** azpepe223@gmail.com
+**Contraseña:** pepe.123
+
+
 ## Funcionalidades principales
 
 - Registro e inicio de sesión con correo y contraseña.

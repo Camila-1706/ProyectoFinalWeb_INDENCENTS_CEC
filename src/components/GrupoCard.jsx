@@ -40,25 +40,36 @@ function GrupoCard({ grupo, rol, setFiltro, onActualizar }) {
             cursor-pointer 
             border 
             flex 
-            flex-col md:flex-row
+            flex-col sm:flex-row
             justify-between 
             items-center
             w-full
+            max-w-xl
+            mx-auto
             gap-5"
-            
+
         >
+            {/* INFO GRUPO */}
+            <div className="
+            flex 
+            flex-col 
+            items-center 
+            sm:items-start 
+            text-center 
+            sm:text-left 
+            flex-1
+            
+            min-w-0">
 
-            <div>
-
-                <h3 className="text-lg font-bold text-purple-700 mb-4">
+                <h3 className="text-xl font-bold text-purple-700 mb-4 break-words w-full">
                     {grupo.nombre}
                 </h3>
 
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-lg">
                     {grupo.total} incidentes
                 </p>
 
-                <p className="mt-2">
+                <p className="mt-2 text-lg">
                     Estado: <span className="font-semibold">{grupo.estado}</span>
                 </p>
 
@@ -68,7 +79,7 @@ function GrupoCard({ grupo, rol, setFiltro, onActualizar }) {
                             e.stopPropagation()
                             desagrupar()
                         }}
-                        className="mt-6 text-sm bg-purple-100 hover:bg-purple-300 text-purple-600 font-semibold px-2 py-2 rounded-xl transition"
+                        className="mt-5 text-sm bg-purple-100 hover:bg-purple-300 text-purple-600 font-semibold px-3 py-2 rounded-xl transition"
                     >
                         Desagrupar
                     </button>
@@ -79,7 +90,9 @@ function GrupoCard({ grupo, rol, setFiltro, onActualizar }) {
             {/* BARAJA DE IMÁGENES*/}
             {grupo.imagenes?.length > 0 && (
 
-                <div className="relative flex-shrink-0 w-32 h-37 max-md:mt-4 max-md:ml-6">
+
+
+                <div className="relative flex-shrink-0 w-32 h-37 m-3">
 
                     {grupo.imagenes.map((url, i) => {
 
@@ -100,7 +113,7 @@ function GrupoCard({ grupo, rol, setFiltro, onActualizar }) {
                                 border-white 
                                 transition-all 
                                 duration-300 
-                                hover:scale-115 
+                                hover:scale-110 
                                 hover:-translate-y-4 
                                 hover:rotate-0 
                                 hover:z-50"
