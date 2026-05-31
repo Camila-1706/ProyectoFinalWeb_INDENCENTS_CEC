@@ -20,28 +20,34 @@ Aplicación web desarrollada con React que permite a los usuarios de la Universi
 
 ## Pasos para ejecutar el proyecto
 
-1. Clonar el repositorio:
-
+1. Clona el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
+   git clone https://github.com/Camila-1706/ProyectoFinalWeb_INDENCENTS_CEC
+``` 
+
+2. Ingresa a la carpeta del proyecto:
+```bash
+   cd Indencents CEC
 ```
 
-2. Instalar las dependencias:
-
+3. Instala las dependencias: 
 ```bash
-npm install
+   npm install
 ```
 
-3. Ejecutar:
-
+4. Inicia el servidor de desarrollo:
 ```bash
-npm run dev
+   npm run dev
 ```
 
-4. Abrir en el navegador: `http://localhost:5173`
+5. Abrir en el navegador: `http://localhost:5173`
 
 ---
+
+## Despliegue
+
+https://indencents-cec.vercel.app/
+
 
 ## Funcionalidades principales
 
@@ -62,10 +68,11 @@ npm run dev
 ---
 
 ## Autores
-Andrés Camilo Araque Suarez
-Emanuel Armando Sterling Jara
-Laura Camila Alvarez Rojas
 
+- Andrés Camilo Araque Suarez
+- Emanuel Armando Sterling Jara
+- Laura Camila Alvarez Rojas
+---
 Proyecto final — Programación Web  
 Ingeniería de Sistemas, 2026-I  
 Universidad de la Amazonia
