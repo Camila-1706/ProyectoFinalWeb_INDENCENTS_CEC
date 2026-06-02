@@ -15,6 +15,29 @@ function IncidentCard({
   // ELIMINAR INCIDENTE
   const eliminarIncidente = async () => {
 
+    // VERIFICAR SI PERTENECE A UN GRUPO CON SOLO 2 INCIDENTES
+    if (incidente.grupo) {
+
+      const { data: miembrosGrupo, error: errorGrupo } = await supabase
+        .from('incidentes')
+        .select('id')
+        .eq('grupo', incidente.grupo)
+
+      if (errorGrupo) {
+        console.log(errorGrupo)
+        toast.error('Error al verificar el grupo')
+        return
+      }
+
+      if (miembrosGrupo.length <= 2) {
+        toast.error(
+          `No puedes eliminar este incidente: el grupo "${incidente.grupo}" quedaría con menos de 2 miembros. Desagrupa el grupo primero y luego elimínalo.`,
+          { duration: 5000 }
+        )
+        return
+      }
+
+    }
     const confirmar = confirm(
       '¿Seguro que deseas eliminar este incidente?'
     )
